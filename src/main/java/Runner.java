@@ -90,12 +90,56 @@ public class Runner {
         System.out.println("Difference between largest and smallest is " + difference);
 
 //        3. Print True if the list contains a 1 next to a 1 somewhere.
+
+        int currentNum = numbers.get(0);
+        boolean consecutive = false;
+        for (int i = 1; i < numbers.size(); i++) {
+            if (numbers.get(i) == currentNum) {
+                consecutive = true;
+            } else {
+                currentNum = numbers.get(i);
+            }
+
+        }
+        System.out.println(consecutive);
+
 //        4. Print the sum of the numbers,
+
+        int sum = 0;
+        int numberOutput = 0;
+        for(int i=0; i<numbers.size(); i++){
+            numberOutput = numbers.get(i);
+            sum = sum + numberOutput;
+        }
+        System.out.println(sum);
+
 //        5. Print the sum of the numbers...
 //           ...except the number 13 is unlucky, so it does not count...
 //           ...and numbers that come immediately after a 13 also do not count.
 //
 //          So [7, 13, 2] would have sum of 7.
+
+        int sum2 = 0;
+        int numberOutput2 = 0;
+        boolean conditionMet = false;
+
+        while (conditionMet = false){
+
+            for(int i = 0; i < numbers.size(); i++){
+                numberOutput2 = numbers.get(i);
+                if (numberOutput2 == 13) {
+                    conditionMet = true;
+                } else {
+                    sum2 = sum2 + numberOutput2;
+                }
+
+
+
+            }
+
+        }
+        System.out.println(sum2);
+
 
     }
 
