@@ -121,16 +121,17 @@ public class Runner {
 
         int sum2 = 0;
         int numberOutput2 = 0;
-        boolean conditionMet = false;
+        boolean conditionMet = true;
 
-        while (conditionMet = false){
+        while (conditionMet == true){
 
-            for(int i = 0; i < numbers.size(); i++){
-                numberOutput2 = numbers.get(i);
-                if (numberOutput2 == 13) {
-                    conditionMet = true;
-                } else {
-                    sum2 = sum2 + numberOutput2;
+            for(int i=0; i < numbers.size(); i++){
+
+                if (numbers.get(i) == 13) {
+                    conditionMet = false;
+                    break; //This magic word fixed everything
+                } else{
+                    sum2 = sum2 + numbers.get(i);
                 }
 
 
@@ -138,7 +139,18 @@ public class Runner {
             }
 
         }
-        System.out.println(sum2);
+       System.out.println(sum2);
+
+//        boolean conditionMet2 = false;
+//        int sum3 = 0;
+//        while (conditionMet2 = false){
+//            for (int number : numbers) {
+//                sum3 = (sum3 + number);
+//
+//                System.out.println(sum3);
+//            }
+
+//        }
 
 
     }
