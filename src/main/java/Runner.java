@@ -71,7 +71,10 @@ public class Runner {
         int smallest = numbers.get(0);
 
         for(int g = 0 ;g < numbers.size(); g++) {
-//            numbers[i] = numbers.get(i);
+
+//            int maxNumber = Collections.max(numbers);
+//            int minNumber = Collections.min(numbers);
+//              int difference = maxNumber - minNumber;
 
 
 
@@ -99,6 +102,7 @@ public class Runner {
             } else {
                 currentNum = numbers.get(i);
             }
+// Answered this question wrong! Has to be 1 not just any number
 
         }
         System.out.println(consecutive);
@@ -131,7 +135,7 @@ public class Runner {
                     conditionMet = false;
                     break; //This magic word fixed everything
                 } else{
-                    sum2 = sum2 + numbers.get(i);
+                    sum2 += numbers.get(i);
                 }
 
 
