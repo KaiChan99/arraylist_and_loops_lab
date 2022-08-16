@@ -138,7 +138,8 @@ public class Runner {
                     sum2 += numbers.get(i);
                 }
 
-
+// Use continue not break if you're just trying to skip 1 iteration and not stop whole loop
+                
 
             }
 
